@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD5D3C12-0D3B-48B3-9445-7F4B47A52094}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>eserve2</RootNamespace>
+    <AssemblyName>eserve2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>..\eserve\eserve\bin\Debug\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addacc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addacc.Designer.cs">
+      <DependentUpon>addacc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addblotter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addblotter.Designer.cs">
+      <DependentUpon>addblotter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adddetainee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adddetainee.Designer.cs">
+      <DependentUpon>adddetainee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addevent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addevent.Designer.cs">
+      <DependentUpon>addevent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addresident.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addresident.Designer.cs">
+      <DependentUpon>addresident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="checklist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="checklist.Designer.cs">
+      <DependentUpon>checklist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clearance.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>clearance.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="clearancedialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clearancedialog.Designer.cs">
+      <DependentUpon>clearancedialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db.cs" />
+    <Compile Include="dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialog.Designer.cs">
+      <DependentUpon>dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcalendar.Designer.cs">
+      <DependentUpon>frmcalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmclearance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmclearance.Designer.cs">
+      <DependentUpon>frmclearance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdashboard.Designer.cs">
+      <DependentUpon>frmdashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmjail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmjail.Designer.cs">
+      <DependentUpon>frmjail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlostnfound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlostnfound.Designer.cs">
+      <DependentUpon>frmlostnfound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmain.Designer.cs">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmusers.Designer.cs">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frnmblotter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frnmblotter.Designer.cs">
+      <DependentUpon>frnmblotter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="helper.cs" />
+    <Compile Include="jail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="jailreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jailreport.Designer.cs">
+      <DependentUpon>jailreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lost.cs" />
+    <Compile Include="printclearance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printclearance.Designer.cs">
+      <DependentUpon>printclearance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="release.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="release.Designer.cs">
+      <DependentUpon>release.cs</DependentUpon>
+    </Compile>
+    <Compile Include="requirements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="requirements.Designer.cs">
+      <DependentUpon>requirements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transfer.Designer.cs">
+      <DependentUpon>transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewevent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewevent.Designer.cs">
+      <DependentUpon>viewevent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewimage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewimage.Designer.cs">
+      <DependentUpon>viewimage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addacc.resx">
+      <DependentUpon>addacc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addblotter.resx">
+      <DependentUpon>addblotter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adddetainee.resx">
+      <DependentUpon>adddetainee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addevent.resx">
+      <DependentUpon>addevent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addresident.resx">
+      <DependentUpon>addresident.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="checklist.resx">
+      <DependentUpon>checklist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clearance.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>clearance.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clearancedialog.resx">
+      <DependentUpon>clearancedialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialog.resx">
+      <DependentUpon>dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcalendar.resx">
+      <DependentUpon>frmcalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmclearance.resx">
+      <DependentUpon>frmclearance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdashboard.resx">
+      <DependentUpon>frmdashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmjail.resx">
+      <DependentUpon>frmjail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlostnfound.resx">
+      <DependentUpon>frmlostnfound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmusers.resx">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frnmblotter.resx">
+      <DependentUpon>frnmblotter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>jail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jailreport.resx">
+      <DependentUpon>jailreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printclearance.resx">
+      <DependentUpon>printclearance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="release.resx">
+      <DependentUpon>release.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="requirements.resx">
+      <DependentUpon>requirements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transfer.resx">
+      <DependentUpon>transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewevent.resx">
+      <DependentUpon>viewevent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewimage.resx">
+      <DependentUpon>viewimage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

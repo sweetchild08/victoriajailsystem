@@ -1,0 +1,47 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="eserve2.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DBhost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="DBusername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="DBpassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DBname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">eserve</Value>
+    </Setting>
+    <Setting Name="admin_username" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="admin_password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">admin</Value>
+    </Setting>
+    <Setting Name="admin_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Administrator</Value>
+    </Setting>
+    <Setting Name="file_directory" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="website" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost/eservweb</Value>
+    </Setting>
+    <Setting Name="clearance_verify_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PSSG Rodolfo G. Gerra Jr</Value>
+    </Setting>
+    <Setting Name="clearance_verify_designation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Police Staff Sergeant
+Investigation PNCO</Value>
+    </Setting>
+    <Setting Name="clearance_approve_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MARFREDO B. DULATRE</Value>
+    </Setting>
+    <Setting Name="clearance_approve_designation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Police Major
+Chief of Police</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
