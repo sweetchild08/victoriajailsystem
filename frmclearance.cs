@@ -44,7 +44,10 @@ namespace eserve2
                     c.purpose,
                     c.email
                 };
-                listView1.Items.Add(new ListViewItem(str));
+                ListViewItem it = new ListViewItem(str);
+                if(c.isopened==0)
+                    it.Font = new Font(listView1.Font,FontStyle.Bold);
+                listView1.Items.Add(it);
                 ctr++;
             }
         }
@@ -145,6 +148,25 @@ namespace eserve2
             }
             requirements req = new requirements(ids[listView1.SelectedIndices[0]]);
             req.ShowDialog();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView1.SelectedIndices.Count > 0 && listView1.SelectedItems[0].Font.Bold)
+            {
+                read(ids[listView1.SelectedIndices[0]]);
+            }
+        }
+        async void read(int id)
+        {
+            var res = await client.GetStringAsync(Properties.Settings.Default.website + "/api.php?read="+id);
+            getContents();
+        }
+
+        async private void button5_Click(object sender, EventArgs e)
+        {
+            var res = await client.GetStringAsync(Properties.Settings.Default.website + "/api.php?readall");
+            getContents();
         }
     }
 }

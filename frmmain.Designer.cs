@@ -45,6 +45,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.xuiBanner1 = new XanderUI.XUIBanner();
+            this.xuiBanner2 = new XanderUI.XUIBanner();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -71,6 +74,8 @@
             // 
             this.panel3.AutoScroll = true;
             this.panel3.AutoScrollMargin = new System.Drawing.Size(10, 10);
+            this.panel3.Controls.Add(this.xuiBanner2);
+            this.panel3.Controls.Add(this.xuiBanner1);
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.button4);
@@ -279,6 +284,40 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 2000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // xuiBanner1
+            // 
+            this.xuiBanner1.BackColor = System.Drawing.Color.Transparent;
+            this.xuiBanner1.BannerColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
+            this.xuiBanner1.BorderColor = System.Drawing.Color.White;
+            this.xuiBanner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuiBanner1.ForeColor = System.Drawing.Color.White;
+            this.xuiBanner1.Location = new System.Drawing.Point(148, 696);
+            this.xuiBanner1.Name = "xuiBanner1";
+            this.xuiBanner1.Size = new System.Drawing.Size(52, 20);
+            this.xuiBanner1.TabIndex = 2;
+            this.xuiBanner1.Text = "1";
+            this.xuiBanner1.Visible = false;
+            // 
+            // xuiBanner2
+            // 
+            this.xuiBanner2.BackColor = System.Drawing.Color.Transparent;
+            this.xuiBanner2.BannerColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
+            this.xuiBanner2.BorderColor = System.Drawing.Color.White;
+            this.xuiBanner2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuiBanner2.ForeColor = System.Drawing.Color.White;
+            this.xuiBanner2.Location = new System.Drawing.Point(148, 289);
+            this.xuiBanner2.Name = "xuiBanner2";
+            this.xuiBanner2.Size = new System.Drawing.Size(52, 20);
+            this.xuiBanner2.TabIndex = 8;
+            this.xuiBanner2.Text = "1";
+            this.xuiBanner2.Visible = false;
+            // 
             // frmmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,5 +359,8 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Timer timer1;
+        private XanderUI.XUIBanner xuiBanner2;
+        private XanderUI.XUIBanner xuiBanner1;
     }
 }

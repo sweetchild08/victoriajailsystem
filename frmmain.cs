@@ -10,6 +10,10 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
 
+
+using System.Net.Http;
+using Newtonsoft.Json;
+
 namespace eserve2
 {
     public partial class frmmain : Form
@@ -19,7 +23,7 @@ namespace eserve2
 
         Button[] buttons = new Button[1];
         Form[] forms = { new frmdashboard(),new frmjail(), new frmclearance(), new frmcalendar(),new frmusers(),new frmlostnfound(),new frnmblotter() };
-
+        public static readonly HttpClient client = new HttpClient();
         void accesscontroll()
         {
             string ses = insession.ToLower();
@@ -78,6 +82,8 @@ namespace eserve2
                     ctr++;
                 }
             }
+            getStats();
+            timer1.Start();
         }
         void resetbuttons()
         {
@@ -172,5 +178,24 @@ namespace eserve2
         {
             changeform(forms[6], sender as Button);
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            getStats();
+        }
+        async void getStats()
+        {
+            var res = await client.GetStringAsync(Properties.Settings.Default.website + "/api.php?stats" );
+            stats stat = JsonConvert.DeserializeObject<stats>(res);
+            xuiBanner2.Visible = stat.clr != 0;
+            xuiBanner2.Text = stat.clr.ToString();
+            xuiBanner1.Visible = stat.lnf != 0;
+            xuiBanner1.Text = stat.lnf.ToString();
+        }
+    }
+    class stats
+    {
+       public int clr { get; set; }
+        public int lnf { get; set; }
     }
 }

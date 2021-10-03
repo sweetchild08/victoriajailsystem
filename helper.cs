@@ -175,6 +175,7 @@ namespace eserve2
         public string purpose { get; set; }
         public string findings { get; set; }
         public string email { get; set; }
+        public int isopened { get; set; }
 
         public  string getfullname()
         {

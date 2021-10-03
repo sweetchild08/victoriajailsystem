@@ -43,7 +43,10 @@ namespace eserve2
                 Array.Resize(ref ids, ctr + 1);
                 ids[ctr] = l.id;
                 string[] str = { l.name,l.type,l.contact,l.subject,l.location, l.status, l.notes,l.email };
-                listView1.Items.Add(new ListViewItem(str));
+                ListViewItem it = new ListViewItem(str);
+                if (l.isopened == 0)
+                    it.Font = new Font(listView1.Font, FontStyle.Bold);
+                listView1.Items.Add(it);
                 ctr++;
             }
         }
@@ -78,9 +81,23 @@ namespace eserve2
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
-
+            if (listView1.SelectedIndices.Count > 0 && listView1.SelectedItems[0].Font.Bold)
+            {
+                read(ids[listView1.SelectedIndices[0]]);
+            }
         }
+
+        async void read(int id)
+        {
+            var res = await client.GetStringAsync(Properties.Settings.Default.website + "/api.php?readlnf=" + id);
+            getContents();
+        }
+
+        //async private void button5_Click(object sender, EventArgs e)
+        //{
+        //    var res = await client.GetStringAsync(Properties.Settings.Default.website + "/api.php?readalllnf");
+        //    getContents();
+        //}
 
         private void frmlostnfound_Load(object sender, EventArgs e)
         {
@@ -166,6 +183,12 @@ namespace eserve2
         private void button7_Click(object sender, EventArgs e)
         {
             action("claimed");
+        }
+
+        async private void button8_Click(object sender, EventArgs e)
+        {
+            var res = await client.GetStringAsync(Properties.Settings.Default.website + "/api.php?readalllnf");
+            getContents();
         }
     }
 

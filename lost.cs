@@ -24,6 +24,7 @@ namespace eserve2
         public string time { get; set; }
         public string status { get; set; }
         public string email { get; set; }
+        public int isopened { get; set; }
     }
     public class response
     {
