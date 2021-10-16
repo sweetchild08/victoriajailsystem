@@ -347,5 +347,17 @@
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2815%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eed7343cf38699d635478f45d884dae4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a65a6fe13cca2ad751a575ba9bf583d8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eed7343cf38699d635478f45d884dae41.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

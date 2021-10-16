@@ -1041,12 +1041,12 @@
             // label42
             // 
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(46, 146);
+            this.label42.Location = new System.Drawing.Point(122, 146);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(112, 30);
+            this.label42.Size = new System.Drawing.Size(143, 30);
             this.label42.TabIndex = 33;
             this.label42.Text = "Select Here";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label49
             // 
@@ -1056,7 +1056,7 @@
             this.label49.Size = new System.Drawing.Size(112, 30);
             this.label49.TabIndex = 35;
             this.label49.Text = "Filter";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox3
             // 
@@ -1174,6 +1174,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::eserve2.Properties.Resources.images__15_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1557, 971);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button8);

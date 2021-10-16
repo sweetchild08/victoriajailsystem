@@ -59,5 +59,45 @@ namespace eserve2.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap a65a6fe13cca2ad751a575ba9bf583d8 {
+            get {
+                object obj = ResourceManager.GetObject("a65a6fe13cca2ad751a575ba9bf583d8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eed7343cf38699d635478f45d884dae4 {
+            get {
+                object obj = ResourceManager.GetObject("eed7343cf38699d635478f45d884dae4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eed7343cf38699d635478f45d884dae41 {
+            get {
+                object obj = ResourceManager.GetObject("eed7343cf38699d635478f45d884dae41", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__15_ {
+            get {
+                object obj = ResourceManager.GetObject("images (15)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

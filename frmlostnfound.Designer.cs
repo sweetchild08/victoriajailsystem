@@ -145,13 +145,14 @@
             // 
             // label49
             // 
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(53, 111);
+            this.label49.BackColor = System.Drawing.SystemColors.Control;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(66, 110);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(112, 30);
             this.label49.TabIndex = 57;
             this.label49.Text = "Filter";
-            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox3
             // 
@@ -276,6 +277,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackgroundImage = global::eserve2.Properties.Resources.images__15_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1707, 870);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);

@@ -167,7 +167,7 @@
             this.label42.Size = new System.Drawing.Size(112, 30);
             this.label42.TabIndex = 65;
             this.label42.Text = "Select";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox2
             // 
@@ -198,6 +198,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Lavender;
+            this.BackgroundImage = global::eserve2.Properties.Resources.images__15_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1390, 888);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

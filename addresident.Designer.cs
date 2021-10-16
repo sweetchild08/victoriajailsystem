@@ -41,7 +41,7 @@
             // 
             // xuiButton4
             // 
-            this.xuiButton4.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.xuiButton4.BackgroundColor = System.Drawing.Color.Transparent;
             this.xuiButton4.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton4.ButtonImage")));
             this.xuiButton4.ButtonStyle = XanderUI.XUIButton.Style.Invert;
             this.xuiButton4.ButtonText = "Cancel";
@@ -51,7 +51,7 @@
             this.xuiButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xuiButton4.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton4.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(151)))));
-            this.xuiButton4.HoverTextColor = System.Drawing.Color.Gainsboro;
+            this.xuiButton4.HoverTextColor = System.Drawing.Color.Transparent;
             this.xuiButton4.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton4.Location = new System.Drawing.Point(235, 212);
             this.xuiButton4.Name = "xuiButton4";
@@ -63,7 +63,7 @@
             // 
             // xuiButton3
             // 
-            this.xuiButton3.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.xuiButton3.BackgroundColor = System.Drawing.Color.Transparent;
             this.xuiButton3.ButtonImage = ((System.Drawing.Image)(resources.GetObject("xuiButton3.ButtonImage")));
             this.xuiButton3.ButtonStyle = XanderUI.XUIButton.Style.Invert;
             this.xuiButton3.ButtonText = "Add";
@@ -73,7 +73,7 @@
             this.xuiButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xuiButton3.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.xuiButton3.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(151)))));
-            this.xuiButton3.HoverTextColor = System.Drawing.Color.Gainsboro;
+            this.xuiButton3.HoverTextColor = System.Drawing.Color.Transparent;
             this.xuiButton3.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton3.Location = new System.Drawing.Point(498, 212);
             this.xuiButton3.Name = "xuiButton3";
@@ -108,7 +108,7 @@
             this.label4.Size = new System.Drawing.Size(195, 40);
             this.label4.TabIndex = 106;
             this.label4.Text = "Birthday";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -119,7 +119,7 @@
             this.label3.Size = new System.Drawing.Size(195, 40);
             this.label3.TabIndex = 105;
             this.label3.Text = "Address";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -130,7 +130,7 @@
             this.label2.Size = new System.Drawing.Size(195, 40);
             this.label2.TabIndex = 104;
             this.label2.Text = "Name";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dateTimePicker1
             // 

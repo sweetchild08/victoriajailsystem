@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmmain));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.xuiBanner2 = new XanderUI.XUIBanner();
+            this.xuiBanner1 = new XanderUI.XUIBanner();
             this.button7 = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.button6 = new System.Windows.Forms.Button();
@@ -46,8 +48,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.xuiBanner1 = new XanderUI.XUIBanner();
-            this.xuiBanner2 = new XanderUI.XUIBanner();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -88,6 +88,34 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(239, 699);
             this.panel3.TabIndex = 2;
+            // 
+            // xuiBanner2
+            // 
+            this.xuiBanner2.BackColor = System.Drawing.Color.Transparent;
+            this.xuiBanner2.BannerColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
+            this.xuiBanner2.BorderColor = System.Drawing.Color.White;
+            this.xuiBanner2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuiBanner2.ForeColor = System.Drawing.Color.White;
+            this.xuiBanner2.Location = new System.Drawing.Point(148, 289);
+            this.xuiBanner2.Name = "xuiBanner2";
+            this.xuiBanner2.Size = new System.Drawing.Size(52, 20);
+            this.xuiBanner2.TabIndex = 8;
+            this.xuiBanner2.Text = "1";
+            this.xuiBanner2.Visible = false;
+            // 
+            // xuiBanner1
+            // 
+            this.xuiBanner1.BackColor = System.Drawing.Color.Transparent;
+            this.xuiBanner1.BannerColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
+            this.xuiBanner1.BorderColor = System.Drawing.Color.White;
+            this.xuiBanner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuiBanner1.ForeColor = System.Drawing.Color.White;
+            this.xuiBanner1.Location = new System.Drawing.Point(148, 696);
+            this.xuiBanner1.Name = "xuiBanner1";
+            this.xuiBanner1.Size = new System.Drawing.Size(52, 20);
+            this.xuiBanner1.TabIndex = 2;
+            this.xuiBanner1.Text = "1";
+            this.xuiBanner1.Visible = false;
             // 
             // button7
             // 
@@ -290,39 +318,13 @@
             this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // xuiBanner1
-            // 
-            this.xuiBanner1.BackColor = System.Drawing.Color.Transparent;
-            this.xuiBanner1.BannerColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
-            this.xuiBanner1.BorderColor = System.Drawing.Color.White;
-            this.xuiBanner1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xuiBanner1.ForeColor = System.Drawing.Color.White;
-            this.xuiBanner1.Location = new System.Drawing.Point(148, 696);
-            this.xuiBanner1.Name = "xuiBanner1";
-            this.xuiBanner1.Size = new System.Drawing.Size(52, 20);
-            this.xuiBanner1.TabIndex = 2;
-            this.xuiBanner1.Text = "1";
-            this.xuiBanner1.Visible = false;
-            // 
-            // xuiBanner2
-            // 
-            this.xuiBanner2.BackColor = System.Drawing.Color.Transparent;
-            this.xuiBanner2.BannerColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(71)))), ((int)(((byte)(89)))));
-            this.xuiBanner2.BorderColor = System.Drawing.Color.White;
-            this.xuiBanner2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xuiBanner2.ForeColor = System.Drawing.Color.White;
-            this.xuiBanner2.Location = new System.Drawing.Point(148, 289);
-            this.xuiBanner2.Name = "xuiBanner2";
-            this.xuiBanner2.Size = new System.Drawing.Size(52, 20);
-            this.xuiBanner2.TabIndex = 8;
-            this.xuiBanner2.Text = "1";
-            this.xuiBanner2.Visible = false;
-            // 
             // frmmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackgroundImage = global::eserve2.Properties.Resources.images__15_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1329, 876);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

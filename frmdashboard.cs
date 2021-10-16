@@ -122,5 +122,10 @@ namespace eserve2
         {
             loadvals();
         }
+
+        private void Chart2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
